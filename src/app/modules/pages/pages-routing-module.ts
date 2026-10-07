@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TdsCalculator } from './components/tds-calculator/tds-calculator';
+import { Home } from './components/home/home';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'tds-calculator', pathMatch: 'full' },
+  { path: '', component: Home },
   { path: 'tds-calculator', component: TdsCalculator },
+  { path: 'home', component: Home },
 ];
 
 @NgModule({
