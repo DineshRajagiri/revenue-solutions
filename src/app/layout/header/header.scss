@@ -1,0 +1,49 @@
+:host {
+  display: block;
+}
+
+.site-header {
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #e5eaf1;
+  display: flex;
+  justify-content: space-between;
+  min-height: 4.5rem;
+  padding: 0 clamp(1.25rem, 5vw, 4rem);
+}
+
+.brand {
+  align-items: center;
+  color: #172b4d;
+  display: inline-flex;
+  font-size: 1.05rem;
+  font-weight: 700;
+  gap: 0.65rem;
+  text-decoration: none;
+}
+
+.brand-mark {
+  align-items: center;
+  background: #1769aa;
+  border-radius: 0.65rem;
+  color: #fff;
+  display: inline-flex;
+  height: 2.15rem;
+  justify-content: center;
+  width: 2.15rem;
+}
+
+nav a {
+  border-radius: 0.4rem;
+  color: #516179;
+  display: inline-block;
+  font-size: 0.95rem;
+  padding: 0.65rem 0.85rem;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+  background: #edf5fc;
+  color: #125a91;
+}
