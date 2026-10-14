@@ -1,11 +1,14 @@
 :host {
   display: block;
+  position: sticky;
+  top: 0;
+  z-index: 200;
 }
 
 .site-header {
   align-items: center;
-  background: #fff;
-  border-bottom: 1px solid #e5eaf1;
+  background: var(--color-surface-raised);
+  border-bottom: 1px solid var(--border);
   display: flex;
   justify-content: space-between;
   min-height: 4.5rem;
@@ -14,7 +17,7 @@
 
 .brand {
   align-items: center;
-  color: #172b4d;
+  color: var(--ink);
   display: inline-flex;
   font-size: 1.05rem;
   font-weight: 700;
@@ -24,9 +27,9 @@
 
 .brand-mark {
   align-items: center;
-  background: #1769aa;
+  background: var(--green);
   border-radius: 0.65rem;
-  color: #fff;
+  color: var(--color-on-dark);
   display: inline-flex;
   height: 2.15rem;
   justify-content: center;
@@ -35,7 +38,7 @@
 
 nav a {
   border-radius: 0.4rem;
-  color: #516179;
+  color: var(--ink-2);
   display: inline-block;
   font-size: 0.95rem;
   padding: 0.65rem 0.85rem;
@@ -44,6 +47,6 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  background: #edf5fc;
-  color: #125a91;
+  background: var(--green-bg);
+  color: var(--green-l);
 }

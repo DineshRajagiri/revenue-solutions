@@ -1,17 +1,20 @@
  <header id="site-header">
   <div class="container">
     <div class="header-inner">
-      <div class="site-logo"> <a [routerLink]="['/home']"> <a
-            [routerLink]="['/home']"
-            class="custom-logo-link" rel="home"
-            aria-current="page"><img fetchpriority="high" width="448"
-              height="408"
-              src="/assets/img/wp-content/uploads/2026/06/MMR-LOGO-PNG-e1691834236181.png"
-              class="custom-logo" alt
-              decoding="async" fetchpriority="high"
-              srcset="/assets/img/wp-content/uploads/2026/06/MMR-LOGO-PNG-e1691834236181.png 448w, /assets/img/wp-content/uploads/2026/06/MMR-LOGO-PNG-e1691834236181-300x273.png 300w"
-              sizes="(max-width: 448px) 100vw, 448px" loading="lazy" /></a>
-        </a> </div>
+      <div class="site-logo">
+        <a [routerLink]="['/home']" class="custom-logo-link" rel="home"
+          aria-label="Revenue Solutions home">
+          <img
+            src="/assets/img/wp-content/uploads/2026/06/fulllogo_transparent_nobuffer.png"
+            class="custom-logo"
+            alt="Revenue Solutions"
+            width="300"
+            height="590"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </a>
+      </div>
       <nav id="primary-nav" aria-label="Main navigation">
         <div id="mmr-nav-close-row"> <span
             style="font-size:13px;font-weight:700;color:var(--ink);letter-spacing:-.01em">Menu</span>
@@ -59,16 +62,16 @@
               Insights</a></div>
         </div>
         <div id="mmr-nav-cta"
-          style="padding:24px 20px 32px;margin-top:8px;border-top:1px solid rgba(6,14,28,.07)">
+          style="padding:24px 20px 32px;margin-top:8px;border-top:1px solid var(--border)">
           <a [routerLink]="['/book-revenue-audit']"
-            style="display:block;background:var(--navy,#060E1C);color:#fff;text-align:center;padding:13px 16px;border-radius:9px;font-size:.875rem;font-weight:700;text-decoration:none;margin-bottom:10px">Book
+            style="display:block;background:var(--color-accent);color:var(--color-on-accent);text-align:center;padding:13px 16px;border-radius:9px;font-size:.875rem;font-weight:700;text-decoration:none;margin-bottom:10px">Book
             Revenue Audit</a> <a [routerLink]="['/login']"
-            style="display:block;text-align:center;padding:11px 16px;border-radius:9px;font-size:.875rem;font-weight:500;color:var(--ink-3,#64748B);border:1px solid rgba(6,14,28,.12);text-decoration:none">Login</a>
+            style="display:block;text-align:center;padding:11px 16px;border-radius:9px;font-size:.875rem;font-weight:500;color:var(--ink-3);border:1px solid var(--border-2);text-decoration:none">Login</a>
         </div>
       </nav>
       <div class="nav-actions"> <a
           [routerLink]="['/book-revenue-audit']"
-          class="btn btn-primary btn-sm">Book Revenue Audit</a> <button
+          class="btn btn-primary btn-sm">Contact Us</a> <button
           class="mobile-toggle" id="mobile-toggle" aria-label="Menu"> <svg
             width="20" height="20" viewBox="0 0 24 24"
             fill="none" stroke="currentColor" stroke-width="2">

@@ -1,0 +1,135 @@
+/* =========================================
+   GLOBAL THEME — MIDNIGHT NAVY & GOLD
+   Change the core tokens here to restyle the site.
+   ========================================= */
+
+:root {
+  /* Page backgrounds */
+  --color-canvas: #07172F;
+  --color-canvas-rgb: 7, 23, 47;
+  --color-surface: #091A35;
+  --color-surface-rgb: 9, 26, 53;
+  --color-surface-raised: #0D2140;
+  --color-surface-muted: #102746;
+  --color-surface-strong: #183653;
+
+  /* Brand and typography */
+  --color-ink: #F4F7FC;
+  --color-ink-rgb: 244, 247, 252;
+  --color-ink-deep: #030C1B;
+  --color-ink-secondary: #D1DCEC;
+  --color-ink-muted: #9BAFC9;
+  --color-ink-subtle: #7186A3;
+  --color-border-rgb: 153, 178, 208;
+  --color-shadow-rgb: 0, 0, 0;
+
+  /* Gold is the primary brand accent in the reference design. */
+  --color-accent: #D6B32F;
+  --color-accent-rgb: 214, 179, 47;
+  --color-accent-hover: #E6C342;
+  --color-accent-bright: #F0D66F;
+
+  /* White and dark backgrounds */
+  --color-white-rgb: 255, 255, 255;
+  --color-on-dark: #F4F7FC;
+  --color-on-accent: #08172D;
+
+  /* Gold highlights */
+  --color-gold: #D6B32F;
+  --color-gold-bright: #F0D66F;
+  --color-gold-rgb: 214, 179, 47;
+
+  /* Status colors */
+  --color-success: #287A52;
+  --color-info: #2563A6;
+  --color-danger: #B42332;
+  --color-danger-rgb: 180, 35, 50;
+
+  /* Existing aliases */
+  --bg: var(--color-canvas);
+  --bg-2: var(--color-surface);
+  --bg-3: var(--color-surface-muted);
+  --bg-4: var(--color-surface-strong);
+
+  --ink: var(--color-ink);
+  --ink-2: var(--color-ink-secondary);
+  --ink-3: var(--color-ink-muted);
+  --ink-4: var(--color-ink-subtle);
+
+  /* Borders */
+  --border: rgba(var(--color-border-rgb), 0.12);
+  --border-2: rgba(var(--color-border-rgb), 0.2);
+  --border-3: rgba(var(--color-border-rgb), 0.34);
+
+  /* Legacy green aliases */
+  --green: var(--color-accent);
+  --green-l: var(--color-accent-hover);
+  --green-xl: var(--color-accent-bright);
+  --green-bg: rgba(var(--color-accent-rgb), 0.12);
+
+  /* Navy and gold aliases */
+  --navy: var(--color-canvas);
+  --navy2: var(--color-ink-deep);
+  --gold: var(--color-gold);
+  --gold-b: var(--color-gold-bright);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(var(--color-shadow-rgb), 0.24);
+
+  --shadow:
+    0 4px 16px rgba(var(--color-shadow-rgb), 0.24),
+    0 2px 6px rgba(var(--color-shadow-rgb), 0.14);
+
+  --shadow-md: 0 4px 24px rgba(var(--color-shadow-rgb), 0.32);
+
+  --shadow-lg:
+    0 12px 40px rgba(var(--color-shadow-rgb), 0.4),
+    0 4px 12px rgba(var(--color-shadow-rgb), 0.24);
+}
+
+/* Global page background and typography */
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: 'SF Pro', sans-serif;
+}
+
+/* Main content background */
+main {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+}
+
+/* Reusable section background */
+.section-muted {
+  background-color: var(--color-surface);
+}
+
+/* Reusable cards */
+.card {
+  background-color: var(--color-surface-raised);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  border-radius: 12px;
+}
+
+/* Primary buttons */
+.btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-on-accent);
+  border: 1px solid var(--color-accent);
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+}
+
+/* Gold decorative accents */
+.accent-gold {
+  color: var(--color-gold);
+}

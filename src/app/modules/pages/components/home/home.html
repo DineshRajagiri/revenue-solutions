@@ -3,10 +3,8 @@
     <div class="container">
         <div class="hero-grid">
             <div class="hero-body">
-                <div class="hero-eyebrow" data-reveal>Trusted by 843+ Hotels
-                    Across India</div>
                 <h1 data-reveal data-reveal-delay="1">Hotel Revenue
-                    Management<br><em>by MMR Hotels.</em></h1>
+                    Management<br><em>by Revenue Solutions.</em></h1>
                 <p class="hero-sub" data-reveal data-reveal-delay="2">MMR Hotels
                     manages pricing,
                     distribution, and direct bookings for 843+ properties across
@@ -31,12 +29,10 @@
                             Market</span>
                     </div>
                 </div>
-                <div class="hero-ctas" data-reveal data-reveal-delay="4"> <a
+                <!-- <div class="hero-ctas" data-reveal data-reveal-delay="4"> <a
                         href="book-revenue-audit/index.html"
-                        class="btn btn-primary btn-lg">Book Free Revenue
-                        Audit</a> <a href="solutions/index.html"
-                        class="btn btn-ghost btn-lg">See how
-                        it works</a> </div>
+                        class="btn btn-primary btn-lg">Contact Us</a> </div> -->
+
             </div>
             <div class="hero-panel hero-panel--photo">
                 <div class="mc mc-revpar" id="mc1" data-mc-delay="350"
@@ -77,12 +73,12 @@
                             month</span></div>
                 </div>
                 <div class="hero-figure"
-                    style="--hero-figure-offset-x:15px;--hero-figure-offset-y:20px;"><img
+                    style="--hero-figure-offset-x:15px;--hero-figure-offset-y:0px;height: 487px;"><img
                         src="/assets/img/wp-content/uploads/2026/07/Untitled-July-16-2026-at-14.59.06.png"
                         alt="MMR Hotels revenue management dashboard"
                         loading="eager" fetchpriority="high"
                         onerror="this.style.display='none'"></div>
-                <div class="mc mc-live" id="mc5" data-mc-delay="1150">
+                <!-- <div class="mc mc-live" id="mc5" data-mc-delay="1150">
                     <div class="mc-live-row">
                         <div class="mc-pip"></div>
                         <div>
@@ -91,7 +87,7 @@
                             <div class="mc-live-s">MMR_REVENUE_TRACK</div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -238,7 +234,7 @@
                     Resources</a>
             </div>
             <div class="pillars-grid" style="--pillars-cols:2"> <a
-                    [routerLink]="['/home']"
+                    [routerLink]="['/hotel-revenue-management']"
                     class="pillar-card">
                     <div class="pillar-num">P1</div>
                     <h4>Hotel
@@ -249,7 +245,7 @@
                             class="pillar-topic">Demand Forecasting</span><span
                             class="pillar-topic">RevPAR &amp; ADR</span> </div>
                     <div class="pillar-more">+1 more &rarr;</div>
-                </a> <a href="resources/ota-distribution-strategy/index.html"
+                </a> <a [routerLink]="['/ota-distribution-strategy']"
                     class="pillar-card">
                     <div class="pillar-num">P2</div>
                     <h4>Distribution &amp; OTA Strategy</h4>
@@ -262,7 +258,7 @@
                             Parity</span>
                     </div>
                     <div class="pillar-more">+2 more &rarr;</div>
-                </a> <a href="resources/hotel-reputation-reviews/index.html"
+                </a> <a [routerLink]="['/hotel-reputation-reviews']"
                     class="pillar-card">
                     <div class="pillar-num">P3</div>
                     <h4>Reputation &amp; Visibility</h4>
@@ -273,8 +269,8 @@
                             class="pillar-topic">TripAdvisor</span>
                     </div>
                     <div class="pillar-more">+2 more &rarr;</div>
-                </a> 
-             </div>
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -330,8 +326,7 @@
                 </div>
                 <div class="cta-actions" data-reveal data-reveal-delay="2"> <a
                         [routerLink]="['/book-revenue-audit']"
-                        class="btn btn-primary btn-lg">Book Free Revenue
-                        Audit</a> 
+                        class="btn btn-primary btn-lg">Contact Us</a>
                     <p class="cta-note">No commitment. Audit delivered
                         within 48 hours.</p>
                 </div>
